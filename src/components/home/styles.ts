@@ -1,14 +1,5 @@
 import styled, { css } from 'styled-components/macro';
 
-export const WrapperContainer = styled.div`
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background: #ffffff;
-  display: flex;
-  justify-content: space-between;
-`;
-
 type GridContainerProps = {
   isLeftGrid?: boolean;
 };
@@ -75,7 +66,7 @@ export const ChatBotImage = styled.img`
   left: 50px;
 `;
 
-export const StartWizardCard = styled.div`
+export const StartCard = styled.div`
   width: 368px;
   height: 272px;
   background: #e6efff;
@@ -103,28 +94,5 @@ export const StartWizardCard = styled.div`
     right: 0px;
     bottom: 30px;
     transform: translate(90%, 0%);
-  }
-`;
-
-export const StyledButton = styled.button`
-  padding: 21px 26px;
-  width: 205px;
-  height: 61px;
-  background: #5956e9;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  font-style: normal;
-  font-weight: 600;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.01em;
-  color: #ffffff;
-  margin-top: 30px;
-  cursor: pointer;
-  display: inline-block;
-  &:focus {
-    outline: none;
   }
 `;

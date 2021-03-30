@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { WrapperContainer } from './LayoutStyles';
+import { WrapperContainer } from '../styles.common';
 import LeftGrid from './LeftGrid';
 import RightGrid from './RIghtGrid';
 

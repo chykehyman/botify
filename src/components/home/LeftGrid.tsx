@@ -1,12 +1,7 @@
 import { FC } from 'react';
 
-import BlueBackground from '../common/BlueBackground';
-import {
-  GridContainer,
-  Caption,
-  Description,
-  ChatBotImage,
-} from './LayoutStyles';
+import { BlueBackground } from '../styles.common';
+import { GridContainer, Caption, Description, ChatBotImage } from './styles';
 
 const LeftGrid: FC<any> = () => (
   <GridContainer isLeftGrid>
