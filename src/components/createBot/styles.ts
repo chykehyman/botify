@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
 export const CheckBoxWrapper = styled.div`
   position: absolute;
@@ -19,7 +19,8 @@ export const IntentListContainer = styled.div`
   position: relative;
   margin: 0 auto;
   z-index: 20;
-  margin-top: 200px;
+  margin-top: 210px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-column-gap: 30px;

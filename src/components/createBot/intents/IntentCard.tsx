@@ -1,6 +1,6 @@
 import { FC, useState, useEffect } from 'react';
 
-import { Intent } from '../CreateBot';
+import { Intent } from '../../../hooks/useFetch';
 import {
   IntentCardContainer,
   CardFooter,
@@ -8,16 +8,16 @@ import {
   CardHeader,
 } from '../styles';
 
-type IntentCardProps = {
-  intent: Intent;
-  isAllSelected: boolean;
+export type IntentCardProps = {
+  intent?: Intent;
+  isAllSelected?: boolean;
 };
 
 const IntentCard: FC<IntentCardProps> = ({ intent, isAllSelected }) => {
   const [isSelected, setIsSelected] = useState<boolean>(false);
 
   useEffect(() => {
-    setIsSelected(isAllSelected);
+    setIsSelected(!!isAllSelected);
   }, [isAllSelected]);
 
   const handleIntentSelection = () => setIsSelected(!isSelected);

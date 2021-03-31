@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+## Botify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Create chat bot intents on the fly
 
-## Available Scripts
+Botify lets you create your own chatbot intents with our chatbot creation wizard, on the fly
 
-In the project directory, you can run:
+Botify is built with TypeScript (ES6) and ReactJs
 
-### `yarn start`
+Visit our website [Botify](https://more-recipes-v1.herokuapp.com) to get started.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- See a list of available chat bot intents
+- Select individual chat bot intent
+- Select all chat bot intents
 
-### `yarn test`
+## Future Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Show number of intents client has selected
+- Add dropdown to allow client fetch the Intent category they want to see and select
+- Allow client search for a particular intent
+- Redirect client to a page where they can fully see the details of a single intent, including all available user expressions.
 
-### `yarn build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install [`node`](https://nodejs.org/en/download/), version 6 or greater
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Clone the repo and cd into it
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   git clone https://github.com/chykehyman/Botify.git
+   cd Botify
+   ```
 
-### `yarn eject`
+3. Install all dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```
+   yarn install
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Configure env for testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```
+   Add a `.env` file in root of project and paste the following:
+   `SKIP_PREFLIGHT_CHECK=true`
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+5. Start the app
 
-## Learn More
+   ```
+   yarn start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6. Open running application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```
+   http://localhost:3000/ or the specified url from the terminal
+   ```
+
+## Testing
+
+> - `yarn test`
+
+## Author
+
+- **Chinwoke Hyginus** -Software Developer and Soccer Frick.

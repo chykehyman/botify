@@ -1,8 +1,12 @@
-import styled, { css } from 'styled-components/macro';
+import styled, { css } from 'styled-components';
 
-export const WrapperContainer = styled.div`
+export const WrapperContainer = styled.div<{ isHomePage?: boolean }>`
   position: relative;
-  height: 100vh;
+  ${(props) =>
+    props.isHomePage &&
+    css`
+      height: 100vh;
+    `}
   width: 100vw;
   background: #ffffff;
   display: flex;

@@ -6,7 +6,7 @@ import RightGrid from './RIghtGrid';
 
 const Home: FC<any> = () => {
   return (
-    <WrapperContainer>
+    <WrapperContainer isHomePage>
       <LeftGrid />
       <RightGrid />
     </WrapperContainer>

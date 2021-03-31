@@ -1,8 +1,8 @@
 import { FC, useState } from 'react';
 
-import { IntentsState } from '../CreateBot';
 import IntentCard from './IntentCard';
 import { CheckBoxWrapper, IntentListContainer } from '../styles';
+import { IntentsState } from '../../../hooks/useFetch';
 
 type IntentListProps = {
   intents: IntentsState;
@@ -16,8 +16,9 @@ const IntentList: FC<IntentListProps> = ({ intents }) => {
   return (
     <IntentListContainer>
       <CheckBoxWrapper>
-        <span>Select All</span>
+        <label htmlFor="checkbox">Select All</label>
         <input
+          id="checkbox"
           type="checkbox"
           checked={isAllSelected}
           onChange={handleSelectAll}
