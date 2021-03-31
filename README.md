@@ -6,7 +6,7 @@ Botify lets you create your own chatbot intents with our chatbot creation wizard
 
 Botify is built with TypeScript (ES6) and ReactJs
 
-Visit our website [Botify](https://more-recipes-v1.herokuapp.com) to get started.
+Visit our website [Botify](https://botify.netlify.app/create-bot) to get started.
 
 ## Features
 
